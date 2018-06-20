@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Docking State Sample</string>
+    <string name="test_is_ready">Docking state test is ready</string>
+    <string name="button_text_exit">Exit</string>
+    <string name="in_cradle_state_text">In Cradle</string>
+    <string name="not_in_cradle_state_text">Not In Cradle</string>
+    <string name="ignition_off_state_text">Ignition Off</string>
+    <string name="ignition_on_state_text">Ignition On</string>
+
+</resources>
