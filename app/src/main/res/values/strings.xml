@@ -6,5 +6,6 @@
     <string name="not_in_cradle_state_text">Not In Cradle</string>
     <string name="ignition_off_state_text">Ignition Off</string>
     <string name="ignition_on_state_text">Ignition On</string>
+    <string name="ignition_unknown_state_text">Ignition Unknown</string>
 
 </resources>

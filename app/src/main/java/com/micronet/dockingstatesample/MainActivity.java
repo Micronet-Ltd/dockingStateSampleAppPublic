@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -67,9 +66,9 @@ public class MainActivity extends Activity {
         switch (mDockState) {
             case Intent.EXTRA_DOCK_STATE_UNDOCKED:
                 cradleStateMsg = getString(R.string.not_in_cradle_state_text);
-                ignitionStateMsg = getString(R.string.ignition_off_state_text);
-                cradleStateImage = R.drawable.out_of_cradle;
-                ignitionStateInage = R.drawable.ignition_off;
+                ignitionStateMsg = getString(R.string.ignition_unknown_state_text);
+                cradleStateImage = R.drawable.ic_out_of_cradle;
+                ignitionStateInage = R.drawable.ic_ignition_unknown;
                 break;
             case Intent.EXTRA_DOCK_STATE_DESK:
             case Intent.EXTRA_DOCK_STATE_LE_DESK:
@@ -77,21 +76,21 @@ public class MainActivity extends Activity {
                 cradleStateMsg = getString(R.string.in_cradle_state_text);
                 //ignitionStateMsg = getString(R.string.ignition_off_state_text);
                 ignitionStateMsg = getString(R.string.ignition_off_state_text);
-                cradleStateImage = R.drawable.in_cradle;
-                ignitionStateInage = R.drawable.ignition_off;
+                cradleStateImage = R.drawable.ic_in_cradle;
+                ignitionStateInage = R.drawable.ic_ignition_off;
                 break;
             case Intent.EXTRA_DOCK_STATE_CAR:
                 cradleStateMsg = getString(R.string.in_cradle_state_text);
                 ignitionStateMsg = getString(R.string.ignition_on_state_text);
-                cradleStateImage = R.drawable.in_cradle;
-                ignitionStateInage = R.drawable.ignition_on;
+                cradleStateImage = R.drawable.ic_in_cradle;
+                ignitionStateInage = R.drawable.ic_ignition_on;
                 break;
             default:
                 /* this state indicates un-defined docking state */
                 cradleStateMsg = getString(R.string.not_in_cradle_state_text);
-                ignitionStateMsg = getString(R.string.ignition_on_state_text);
-                cradleStateImage = R.drawable.out_of_cradle;
-                ignitionStateInage = R.drawable.ignition_on;
+                ignitionStateMsg = getString(R.string.ignition_unknown_state_text);
+                cradleStateImage = R.drawable.ic_out_of_cradle;
+                ignitionStateInage = R.drawable.ic_ignition_unknown;
                 break;
         }
 
